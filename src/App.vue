@@ -63,7 +63,7 @@
           <input @keyup="event => estado.numB = parseFloat(event.target.value)" type="number" placeholder="Digite o segundo numero" class="form-control">
         </div>
         <div class="col-md-2">
-          <select v-model="estado.filtro" @change="calculadora" class="form-control">
+          <select v-model="estado.filtro" @keyup="calculadora" class="form-control">
             <option value="adicao">Adiçao</option>
             <option value="subtracao">Subtração</option>
             <option value="multiplicacao">Multiplicação</option>
